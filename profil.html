@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon Profil | IDA Connect</title>
+
+    <link rel="stylesheet" href="profil.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <img src="./IDAA.jpeg" alt="IDA">
+
+            <h2>IDA Connect</h2>
+
+        </div>
+
+        <ul>
+
+            <li>
+
+                <a href="./css/js/dashboard.html">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>Tableau de bord</span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="./css/js/sequences.html">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <span>Séquences</span>
+
+                </a>
+
+            </li>
+
+            <li class="active">
+
+                <a href="profil.html">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>Mon Profil</span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="index.html">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    <span>Déconnexion</span>
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= CONTENU ================= -->
+
+    <main class="content">
+
+        <header>
+
+            <h1>Mon Profil</h1>
+
+            <p>Bienvenue sur votre espace personnel.</p>
+
+        </header>
+
+        <!-- ================= CARTE PROFIL ================= -->
+
+        <section class="profile-card">
+
+            <img src="./UTILISATEUR.jpeg" alt="Photo de profil" id="profileImage">
+
+            <h2 id="userName">Étudiant IDA</h2>
+
+            <p id="userEmail">email@unchk.edu.sn</p>
+
+            <span class="badge">Licence 2 - IDA</span>
+
+        </section>
+
+        <!-- ================= INFORMATIONS ================= -->
+
+        <section class="info-grid">
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>Filière</h3>
+
+                <p>Informatique Développement d'Applications</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Promotion</h3>
+
+                <p>Promotion 14</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-book"></i>
+
+                <h3>Modules</h3>
+
+                <p>HTML5 - Algorithmique - JavaScript</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>Progression</h3>
+
+                <p>80%</p>
+
+            </div>
+
+        </section>
+
+        <!-- ================= PROGRESSION ================= -->
+
+        <section class="progress-section">
+
+            <h2>Progression générale</h2>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill"></div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= BADGES ================= -->
+
+        <section class="badges">
+
+            <h2>Badges obtenus</h2>
+
+            <div class="badge-container">
+
+                <div class="badge-card">
+
+                    🥇
+
+                    <h4>Débutant HTML</h4>
+
+                </div>
+
+                <div class="badge-card">
+
+                    💻
+
+                    <h4>Codeur JavaScript</h4>
+
+                </div>
+
+                <div class="badge-card">
+
+                    📚
+
+                    <h4>Expert Révision</h4>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ACTIONS ================= -->
+
+        <section class="actions">
+
+            <button id="editBtn">
+
+                <i class="fa-solid fa-pen"></i>
+
+                Modifier le profil
+
+            </button>
+
+            <button id="logoutBtn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Déconnexion
+
+            </button>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/profil.js"></script>
+
+</body>
+
+</html>

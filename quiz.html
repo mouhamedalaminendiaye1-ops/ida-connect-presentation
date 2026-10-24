@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | IDA Connect</title>
+
+    <link rel="stylesheet" href="quiz.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+
+            <img src="./IDAA.jpeg" alt="IDA">
+
+            <h2>IDA Connect</h2>
+
+        </div>
+
+        <ul>
+
+            <li>
+
+                <a href="./css/js/dashboard.html">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>Tableau de bord</span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="./css/js/sequences.html">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <span>Séquences</span>
+
+                </a>
+
+            </li>
+
+            <li class="active">
+
+                <a href="quiz.html">
+
+                    <i class="fa-solid fa-circle-question"></i>
+
+                    <span>Quiz</span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="profil.html">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>Mon Profil</span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="index.html">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    <span>Déconnexion</span>
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= CONTENU ================= -->
+
+    <main class="content">
+
+        <header>
+
+            <div>
+
+                <h1>Quiz Interactif</h1>
+
+                <p>Évaluez vos connaissances en HTML5, Algorithmique et JavaScript.</p>
+
+            </div>
+
+            <div class="score-box">
+
+                <h2>Score</h2>
+
+                <span id="score">0 / 5</span>
+
+            </div>
+
+        </header>
+
+        <!-- ================= QUIZ ================= -->
+
+        <section class="quiz-container">
+
+            <div class="question-card">
+
+                <h2 id="question">
+
+                    Chargement de la question...
+
+                </h2>
+
+                <div id="answers" class="answers">
+
+                </div>
+
+                <button id="nextBtn">
+
+                    Question suivante
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ================= RESULTAT ================= -->
+
+        <section id="result" class="result">
+
+            <i class="fa-solid fa-trophy"></i>
+
+            <h2>Quiz terminé !</h2>
+
+            <p id="finalScore"></p>
+
+            <button onclick="location.reload()">
+
+                Recommencer
+
+            </button>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/quiz.js"></script>
+
+</body>
+
+</html>

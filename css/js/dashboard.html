@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | IDA Connect</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+
+            <img src="../../IDAA.jpeg" alt="IDA">
+
+            <h2>IDA Connect</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Tableau de bord
+                </a>
+            </li>
+
+            <li>
+                <a href="sequences.html">
+                    <i class="fa-solid fa-book-open"></i>
+                    Séquences
+                </a>
+            </li>
+            <li>
+                <a href="../../quiz.html">
+
+                    <i class="fa-solid fa-circle-question"></i>
+
+                    <span>Quiz</span>
+
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Calendrier
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Progression
+                </a>
+            </li>
+
+            <li>
+                <a href="../../profil.html">
+                    <i class="fa-solid fa-user"></i>
+                    Mon Profil
+                </a>
+            </li>
+
+            <li>
+                <a href="../../index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Déconnexion
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- ================= CONTENU ================= -->
+
+    <main class="content">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div>
+
+                <h1>Bienvenue 👋</h1>
+
+                <p>Plateforme de révision des étudiants IDA</p>
+
+            </div>
+
+            <div class="user">
+
+                <img src="../../UTILISATEUR.jpeg" alt="Utilisateur">
+
+            </div>
+
+        </header>
+
+
+
+        <!-- BIENVENUE -->
+
+        <section class="welcome">
+
+            <div class="welcome-text">
+
+                <h2>Bonjour Étudiant 👨‍🎓</h2>
+
+                <p>
+
+                    Continuez vos révisions et préparez efficacement vos examens grâce à IDA Connect.
+
+                </p>
+
+                <a href="sequences.html">
+
+                    Commencer une révision
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- STATISTIQUES -->
+
+        <section class="stats">
+
+            <div class="card">
+
+                <i class="fa-solid fa-book"></i>
+
+                <h2>3</h2>
+
+                <p>Modules</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <h2>12</h2>
+
+                <p>Séquences</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h2>24 h</h2>
+
+                <p>Temps de révision</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h2>80%</h2>
+
+                <p>Progression</p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MODULES -->
+
+        <section class="modules">
+
+            <h2>Modules disponibles</h2>
+
+            <div class="module-grid">
+
+                <div class="module">
+
+                    <i class="fa-brands fa-html5"></i>
+
+                    <h3>HTML5</h3>
+
+                    <p>Structure des pages Web.</p>
+
+                    <a href="sequences.html">
+
+                        Voir les séquences
+
+                    </a>
+
+                </div>
+
+                <div class="module">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <h3>Algorithmique</h3>
+
+                    <p>Variables, traitements et fonctions.</p>
+
+                    <a href="sequences.html">
+
+                        Voir les séquences
+
+                    </a>
+
+                </div>
+
+                <div class="module">
+
+                    <i class="fa-brands fa-js"></i>
+
+                    <h3>JavaScript</h3>
+
+                    <p>Programmation dynamique.</p>
+
+                    <a href="sequences.html">
+
+                        Voir les séquences
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RÉVISIONS -->
+
+        <section class="revision">
+
+            <h2>Révisions du jour</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Module</th>
+
+                        <th>Séquence</th>
+
+                        <th>Durée</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>HTML5</td>
+
+                        <td>Séquence 1</td>
+
+                        <td>1 Heure</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Algorithmique</td>
+
+                        <td>Séquence 1</td>
+
+                        <td>2 Heures</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>JavaScript</td>
+
+                        <td>Séquence 1</td>
+
+                        <td>1 Heure 30</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            © 2026 IDA Connect | Université Numérique Cheikh Hamidou Kane
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

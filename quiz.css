@@ -1,0 +1,338 @@
+/*==========================================
+        IDA CONNECT - QUIZ.CSS
+==========================================*/
+
+/*========== RESET ==========*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F4F7FC;
+    color:#1E293B;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/*========== LAYOUT ==========*/
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+/*========== SIDEBAR ==========*/
+
+.sidebar{
+    width:260px;
+    background:#0F172A;
+    color:#fff;
+    padding:25px;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+}
+
+.brand{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.brand img{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    background:#fff;
+    padding:8px;
+    border-radius:12px;
+    margin:5px;
+}
+
+.brand h2{
+    margin-top:15px;
+    font-size:24px;
+}
+
+.sidebar li{
+    margin:12px 0;
+}
+
+.sidebar a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.sidebar a:hover,
+.sidebar .active a{
+    background:#2563EB;
+}
+
+/*========== CONTENT ==========*/
+
+.content{
+    margin-left:260px;
+    width:100%;
+    padding:35px;
+}
+
+/*========== HEADER ==========*/
+
+header{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:35px;
+}
+
+header h1{
+    color:#2563EB;
+    font-size:32px;
+}
+
+header p{
+    color:#64748B;
+    margin-top:8px;
+}
+
+/*========== SCORE ==========*/
+
+.score-box{
+    background:#2563EB;
+    color:white;
+    padding:20px 30px;
+    border-radius:15px;
+    text-align:center;
+    min-width:150px;
+}
+
+.score-box h2{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.score-box span{
+    font-size:26px;
+    font-weight:bold;
+}
+
+/*========== QUIZ ==========*/
+
+.quiz-container{
+    display:flex;
+    justify-content:center;
+}
+
+.question-card{
+    width:100%;
+    max-width:850px;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    animation:fadeIn .6s ease;
+}
+
+.question-card h2{
+    margin-bottom:30px;
+    color:#2563EB;
+    line-height:1.5;
+}
+
+/*========== REPONSES ==========*/
+
+.answers{
+    display:grid;
+    gap:15px;
+}
+
+.answers button{
+    width:100%;
+    text-align:left;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:#EEF4FF;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.answers button:hover{
+    background:#2563EB;
+    color:white;
+    transform:translateX(8px);
+}
+
+.answers button.correct{
+    background:#16A34A;
+    color:white;
+}
+
+.answers button.wrong{
+    background:#DC2626;
+    color:white;
+}
+
+/*========== NEXT BUTTON ==========*/
+
+#nextBtn{
+    margin-top:30px;
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#2563EB;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#nextBtn:hover{
+    background:#1D4ED8;
+}
+
+/*========== RESULTAT ==========*/
+
+.result{
+    display:none;
+    margin-top:40px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.result i{
+    font-size:80px;
+    color:#F59E0B;
+    margin-bottom:20px;
+}
+
+.result h2{
+    color:#2563EB;
+    margin-bottom:15px;
+}
+
+.result p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.result button{
+    padding:15px 35px;
+    border:none;
+    border-radius:12px;
+    background:#16A34A;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.result button:hover{
+    background:#15803D;
+}
+
+/*========== ANIMATION ==========*/
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/*========== SCROLLBAR ==========*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563EB;
+    border-radius:20px;
+}
+
+/*========== RESPONSIVE ==========*/
+
+@media(max-width:900px){
+
+.sidebar{
+    width:90px;
+}
+
+.brand h2{
+    display:none;
+}
+
+.sidebar span{
+    display:none;
+}
+
+.content{
+    margin-left:90px;
+}
+
+header{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+}
+
+}
+
+@media(max-width:700px){
+
+.content{
+    padding:20px;
+}
+
+.question-card{
+    padding:25px;
+}
+
+.question-card h2{
+    font-size:22px;
+}
+
+.answers button{
+    font-size:15px;
+}
+
+header h1{
+    font-size:26px;
+}
+
+.score-box{
+    width:100%;
+}
+
+}
